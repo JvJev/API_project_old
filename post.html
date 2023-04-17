@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="comments-form">
+    <div class="form-control">
+      <label for="comment-name">Name:</label>
+      <input type="text" name="name" id="comment-name">
+    </div>
+
+    <div class="form-control">
+      <label for="comment-email">Email:</label>
+      <input type="email" name="email" id="comment-email">
+    </div>
+
+    <div class="form-control">
+      <label for="comment-body">Content:</label>
+      <textarea name="body" id="comment-body" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="submit" value="Add a comment" id="edit-button">
+  </form>
+
+  <div id="post-wrapper"></div>
+  
+  <script type="module" src="./post.js"></script>
+</body>
+</html>
